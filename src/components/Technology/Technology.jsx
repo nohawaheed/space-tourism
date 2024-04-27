@@ -6,7 +6,6 @@ export default function Technology(props) {
   const technology = props.technology;
   const isDesktop = window.matchMedia("(min-width: 64em)");
   const [matches, setMatches] = useState(isDesktop.matches);
-  console.log(isDesktop.matches);
   const orientation = matches ? "-portrait.jpg" : "-landscape.jpg";
 
   useEffect(() => {
