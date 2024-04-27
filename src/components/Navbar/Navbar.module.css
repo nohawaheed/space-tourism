@@ -53,13 +53,16 @@
   a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+      cursor: pointer;
+    }
   }
   li {
     display: flex;
     align-items: center;
     min-height: 30px;
     &:hover {
-      cursor: pointer;
+      /* cursor: pointer; */
       border-inline-end: 0.25rem solid rgba(225, 225, 225, 0.4);
     }
   }
@@ -100,7 +103,6 @@
       display: flex;
       min-height: 100%;
       &:hover {
-        cursor: pointer;
         border-inline-end: unset !important;
         border-bottom: 0.25rem solid rgba(225, 225, 225, 0.4);
       }
