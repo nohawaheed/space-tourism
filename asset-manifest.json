@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-tourism/static/css/main.eb31f922.css",
-    "main.js": "/space-tourism/static/js/main.8e0f6538.js",
+    "main.css": "/space-tourism/static/css/main.a76d45e5.css",
+    "main.js": "/space-tourism/static/js/main.e6eed895.js",
     "static/js/453.ea9beecd.chunk.js": "/space-tourism/static/js/453.ea9beecd.chunk.js",
     "static/media/background-home-desktop.jpg": "/space-tourism/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/space-tourism/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
@@ -31,12 +31,12 @@
     "static/media/logo.svg": "/space-tourism/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/space-tourism/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/space-tourism/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.eb31f922.css.map": "/space-tourism/static/css/main.eb31f922.css.map",
-    "main.8e0f6538.js.map": "/space-tourism/static/js/main.8e0f6538.js.map",
+    "main.a76d45e5.css.map": "/space-tourism/static/css/main.a76d45e5.css.map",
+    "main.e6eed895.js.map": "/space-tourism/static/js/main.e6eed895.js.map",
     "453.ea9beecd.chunk.js.map": "/space-tourism/static/js/453.ea9beecd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb31f922.css",
-    "static/js/main.8e0f6538.js"
+    "static/css/main.a76d45e5.css",
+    "static/js/main.e6eed895.js"
   ]
 }
