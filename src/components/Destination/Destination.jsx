@@ -8,7 +8,7 @@ export default function Destination(props) {
   return (
     <>
       <article className={styles.container}>
-        <header className={styles.header}>
+        <div className={styles.header}>
           <h1 className={`${styles.color_white} bellefair-heading-5`}>
             <span>01</span>
             Pick your destination
@@ -23,7 +23,7 @@ export default function Destination(props) {
               />
             )}
           </div>
-        </header>
+        </div>
         <div className={styles.content}>
           <div className={`${styles.links} bellefair-nav-text`}>
             <button

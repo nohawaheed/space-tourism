@@ -8,12 +8,12 @@ export default function Crew(props) {
   return (
     <>
       <article className={styles.container}>
-        <header className={styles.header}>
+        <div className={styles.header}>
           <h1 className={`${styles.color_white} bellefair-heading-5`}>
             <span>02</span>
             Meet your crew
           </h1>
-        </header>
+        </div>
 
         <div className={styles.image}>
           {crew[index]?.images.webp && (

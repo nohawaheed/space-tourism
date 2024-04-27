@@ -18,12 +18,12 @@ export default function Technology(props) {
   return (
     <>
       <article className={styles.container}>
-        <header className={styles.header}>
+        <div className={styles.header}>
           <h1 className={`${styles.color_white} bellefair-heading-5`}>
             <span>03</span>
             SPACE LAUNCH 101
           </h1>
-        </header>
+        </div>
 
         <div className={styles.image}>
           {technology[index]?.images && (
