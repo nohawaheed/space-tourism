@@ -36,8 +36,8 @@ export default function Navbar(props) {
           onClick={() => setNavbarOpen(false)}
         />
         <ul className={styles.menu_links}>
-          <li className={pathname === "/" ? styles.active : ""}>
-            <Link to="/" onClick={() => setNavbarOpen(false)}>
+          <li className={pathname === "/space-tourism" ? styles.active : ""}>
+            <Link to="/space-tourism" onClick={() => setNavbarOpen(false)}>
               <span>00</span> Home
             </Link>
           </li>

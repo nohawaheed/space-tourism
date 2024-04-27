@@ -26,7 +26,7 @@ function App() {
       element: <Layout />,
       children: [
         {
-          index: true,
+          path: "space-tourism",
           element: <Home />,
         },
         {
