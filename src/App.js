@@ -20,39 +20,39 @@ function App() {
   useEffect(() => {
     getData();
   }, []);
-  const router = createBrowserRouter([
-    {
-      path: "",
-      element: <Layout />,
-      children: [
-        {
-          path: "space-tourism",
-          element: <Home />,
-        },
-        {
-          path: "destination",
-          element: <Destination destination={data.destinations} />,
-        },
-        {
-          path: "crew",
-          element: <Crew crew={data.crew} />,
-        },
-        {
-          path: "technology",
-          element: <Technology technology={data.technology} />,
-        },
-        {
-          path: "*",
-          element: <RouteNotFound />,
-        },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "",
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "destination",
+            element: <Destination destination={data.destinations} />,
+          },
+          {
+            path: "crew",
+            element: <Crew crew={data.crew} />,
+          },
+          {
+            path: "technology",
+            element: <Technology technology={data.technology} />,
+          },
+          {
+            path: "*",
+            element: <RouteNotFound />,
+          },
+        ],
+      },
+    ],
+    { basename: "/space-tourism" }
+  );
   return data.destinations ? (
-    <RouterProvider
-      basename={process.env.PUBLIC_URL}
-      router={router}
-    ></RouterProvider>
+    <RouterProvider router={router}></RouterProvider>
   ) : null;
 }
 
