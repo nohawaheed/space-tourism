@@ -49,7 +49,10 @@ function App() {
     },
   ]);
   return data.destinations ? (
-    <RouterProvider router={router}></RouterProvider>
+    <RouterProvider
+      basename={process.env.PUBLIC_URL}
+      router={router}
+    ></RouterProvider>
   ) : null;
 }
 

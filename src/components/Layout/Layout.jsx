@@ -53,7 +53,7 @@ export default function Layout() {
       className={styles.layout}
       style={{
         backgroundImage: `url(${
-          pathname === "/space-tourism"
+          pathname === "/space-tourism" || pathname === "/space-tourism/"
             ? HomeBacgroundImage
             : pathname === "/destination"
             ? destinationBacgroundImage
