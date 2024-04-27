@@ -1,0 +1,20 @@
+.layout {
+  position: relative;
+  background-color: var(--color-dark);
+}
+
+header {
+  max-height: 100px;
+}
+
+@media screen and (min-width: 48em) {
+  header {
+    max-height: 96px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  header {
+    max-height: 136px;
+  }
+}

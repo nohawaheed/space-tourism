@@ -1,0 +1,163 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.logo {
+  max-width: 2.5rem;
+  img {
+    width: 100%;
+  }
+}
+
+.hamburger,
+.close_btn {
+  color: var(--color-blue);
+}
+.close_btn {
+  padding: 1.625rem;
+  align-self: flex-end;
+}
+.hamburger:hover,
+.close_btn:hover {
+  cursor: pointer;
+}
+.show_side_nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  z-index: 99;
+}
+.nav {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  display: flex;
+  min-width: 65%;
+}
+
+.hide_nav {
+  display: none;
+}
+
+.menu_links {
+  list-style: none;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding-inline-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    &:hover {
+      cursor: pointer;
+      border-inline-end: 0.25rem solid rgba(225, 225, 225, 0.4);
+    }
+  }
+  .active {
+    border-inline-end: 0.25rem solid var(--color-white);
+  }
+
+  li + li {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .nav {
+    min-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 28.125rem;
+    min-width: 60%;
+  }
+  .navbar {
+    min-height: 6rem;
+    padding: unset;
+    padding-inline-start: 2.4375rem;
+  }
+  .logo {
+    max-width: unset;
+  }
+  .menu_links {
+    flex-direction: row;
+    margin-top: unset;
+    padding-inline-start: unset;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      display: flex;
+      min-height: 100%;
+      &:hover {
+        cursor: pointer;
+        border-inline-end: unset !important;
+        border-bottom: 0.25rem solid rgba(225, 225, 225, 0.4);
+      }
+    }
+  }
+
+  .active {
+    border-bottom: 0.25rem solid var(--color-white);
+    border-inline-end: unset !important;
+  }
+  .close_btn,
+  .hamburger {
+    display: none;
+  }
+
+  .menu_links {
+    li + li {
+      margin-top: unset;
+      margin-left: 2rem;
+    }
+  }
+  a {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  a {
+    span {
+      display: inline;
+    }
+  }
+  .nav {
+    max-width: 51.875rem;
+  }
+  .navbar {
+    padding: unset;
+  }
+  .nav,
+  .logo {
+    margin-top: 2.5rem;
+  }
+  .logo {
+    margin-inline-start: 3.4375rem;
+    position: relative;
+  }
+  .logo::after {
+    content: " ";
+    position: absolute;
+    width: clamp(25vw, 32vw, 40vw);
+    height: 0.0325rem;
+    background-color: var(--color-white);
+    opacity: 0.25;
+    top: 50%;
+    inset-inline-start: 5.5rem;
+    z-index: 999;
+  }
+}
