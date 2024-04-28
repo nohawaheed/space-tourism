@@ -56,6 +56,9 @@
     &:hover {
       cursor: pointer;
     }
+    span {
+      font-weight: bold;
+    }
   }
   li {
     display: flex;

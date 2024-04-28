@@ -34,6 +34,7 @@
   color: var(--color-white);
   span {
     opacity: 0.25;
+    font-weight: bold;
   }
 }
 
